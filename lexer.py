@@ -1,4 +1,3 @@
-# lexer.py
 from tokens import Token, LexError
 from scan_ident import scan_identifier
 from scan_symbols import scan_number, scan_operator, scan_delimiter
@@ -78,6 +77,9 @@ def tokenize(src):
             new_pos = pos + 1
             new_line = line
             new_col = col + 1
+
+        if token is None and error is None and new_pos <= pos:
+            error = LexError("invalid character '" + ch + "'", line, col)
 
         # safety: never get stuck in an infinite loop
         if new_pos <= pos:

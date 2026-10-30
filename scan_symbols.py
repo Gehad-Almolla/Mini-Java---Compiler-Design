@@ -2,7 +2,8 @@ from tokens import Token
 
 OPERATORS = {
     "==": "LOGOP", "!=": "LOGOP", "<=": "LOGOP", ">=": "LOGOP",
-    "<": "LOGOP", ">": "LOGOP",
+    "<": "LOGOP", ">": "LOGOP", 
+    "&&": "LOGOP", "||": "LOGOP", "!": "LOGOP",
     "=": "ASSIGN",
     "+": "MATHOP", "-": "MATHOP", "*": "MATHOP", "/": "MATHOP", "%": "MATHOP",
 }

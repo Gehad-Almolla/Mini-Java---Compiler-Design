@@ -7,7 +7,7 @@ def main():
     if len(sys.argv) > 1:
         filename = sys.argv[1]
     else:
-        filename = "input.txt"
+        filename = "test_input.txt"
 
     with open(filename, "r") as f:
         src = f.read()

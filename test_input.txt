@@ -22,14 +22,14 @@ class TestUnclosedString {
     String s = "This string is never closed;
 }
 
-// Test Case 4: Unclosed Multi-line Comment Test
+// Test Case 4: Invalid Character Test
+class TestInvalidChar {
+    int @val = 100;
+}
+
+// Test Case 5: Unclosed Multi-line Comment Test
 /* This comment starts here
    and never ends...
 class TestUnclosedComment {
     int a = 1;
-}
-
-// Test Case 5: Invalid Character Test
-class TestInvalidChar {
-    int @val = 100;
 }
