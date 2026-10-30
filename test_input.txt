@@ -1,0 +1,35 @@
+// Test Case 1: Valid Mini Java Program
+class Main {
+    public static void main(String[] args) {
+        int x = 10;
+        float y = 25.5;
+        boolean flag = true;
+        if (x < y) {
+            System.out.println("Valid Program");
+        } else {
+            x = 0;
+        }
+    }
+}
+
+// Test Case 2: Invalid Identifier Test (Starts with a digit)
+class TestInvalidID {
+    int 1name = 5;
+}
+
+// Test Case 3: Unclosed String Literal Test
+class TestUnclosedString {
+    String s = "This string is never closed;
+}
+
+// Test Case 4: Unclosed Multi-line Comment Test
+/* This comment starts here
+   and never ends...
+class TestUnclosedComment {
+    int a = 1;
+}
+
+// Test Case 5: Invalid Character Test
+class TestInvalidChar {
+    int @val = 100;
+}
